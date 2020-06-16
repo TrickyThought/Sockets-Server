@@ -16,5 +16,10 @@ namespace SocketsServerApp
         {
             InitializeComponent();
         }
+
+        private void startServerBtn_Click(object sender, EventArgs e)
+        {
+            SynchronousSocketListener.StartListening(piPictureBox);
+        }
     }
 }
